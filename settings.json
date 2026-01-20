@@ -1,0 +1,85 @@
+{
+  "theme": "3024-night",
+  "lightTheme": "eclipse",
+  "darkTheme": "3024-night",
+  "readOnlyChecked": false,
+  "drawerType": {
+    "None": {
+      "index": 0,
+      "w": 245.75
+    },
+    "Folder": {
+      "index": 1,
+      "w": 400
+    },
+    "Help": {
+      "index": 2,
+      "w": 400
+    },
+    "Settings": {
+      "index": 3,
+      "w": 400
+    },
+    "Panels": {
+      "index": 4,
+      "w": 400
+    },
+    "FileAttachments": {
+      "index": 5,
+      "w": 400
+    },
+    "Dataset": {
+      "index": 5,
+      "w": 400
+    },
+    "ImportModules": {
+      "index": 6,
+      "w": 400
+    },
+    "FindAndReplace": {
+      "index": 7,
+      "w": 400
+    },
+    "AiComp": {
+      "index": 8,
+      "w": 400
+    },
+    "VersionHistory": {
+      "index": 9,
+      "w": 350
+    }
+  },
+  "published": [],
+  "extension": true,
+  "widthScale": 100,
+  "heightScale": 92.9399367755532,
+  "lineNumbers": true,
+  "vimEnabled": false,
+  "autoClosePairs": false,
+  "markText": true,
+  "darkMode": true,
+  "lang": "en",
+  "autoFormat": false,
+  "mask": false,
+  "displayHistory": false,
+  "reserveSpace": false,
+  "minimap": false,
+  "imageQuality": 0.5,
+  "jsPdfFont": "",
+  "draggableEditor": false,
+  "autoSave": true,
+  "autoSaveInSecond": 10,
+  "tagVersionPeriod": 10,
+  "notice_mode": "info",
+  "usersSharePermission": {},
+  "globalFilters": {},
+  "databases": [],
+  "aiModels": [],
+  "selectedAiIndex": 0,
+  "inlinePeriod": 1200,
+  "secrets": [],
+  "git": {
+    "enabled": false,
+    "remoteUrl": "git@github.com:Dienert/fortune500_grove.git"
+  }
+}
