@@ -6,7 +6,7 @@
   "drawerType": {
     "None": {
       "index": 0,
-      "w": 245.75
+      "w": 170
     },
     "Folder": {
       "index": 1,
@@ -51,9 +51,9 @@
   },
   "published": [],
   "extension": true,
-  "widthScale": 44.973544973544975,
-  "heightScale": 80.29504741833509,
-  "lineNumbers": true,
+  "widthScale": 100,
+  "heightScale": 100,
+  "lineNumbers": false,
   "vimEnabled": false,
   "autoClosePairs": false,
   "markText": true,
