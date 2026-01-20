@@ -1,5 +1,5 @@
-<!--{"pinCode":true,"dname":"fa2fec34-0c55-4aae-9c96-76326f520eff","codeMode":"js"}-->
-# Collab test 
+<!--{"type":"header","level":1}-->
+# Test markdown
 
 <!--{"pinCode":true,"dname":"0fd72d03-b4f4-4b5f-a142-04cf71fd1f15","codeMode":"js"}-->
 ```js
