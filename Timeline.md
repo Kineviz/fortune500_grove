@@ -3,6 +3,7 @@
 mutable keylist_flag = 0
 ```
 
+
 <!--{"pinCode":false,"dname":"27b9401a-b1f9-4325-9034-9a8227450e17","codeMode":"js","hide":true}-->
 ```js
 keylist = {
@@ -256,9 +257,6 @@ mutable selectedTheme = 'dark'
 // Active theme based on selection
 theme = selectedTheme === 'dark' ? theme_dark : theme_light
 ```
-
-<!--{"pinCode":true,"dname":"78dacf87-63cd-4ffa-8302-689cc674b830","codeMode":"markdown"}-->
-
 
 <!--{"pinCode":false,"dname":"6a6c7180-0165-4b0f-b1f8-508b11522f64","codeMode":"js"}-->
 ```js
@@ -758,5 +756,9 @@ function debounce(input, delay = 1000) {
 
 <!--{"pinCode":false,"dname":"6055d289-774e-4b43-a367-6c4bbedbd9c2","codeMode":"js","hide":true}-->
 ```js
-import {simplifyMarket} from 'map_market'
+import {simplifyMarket} from 'backups/map_market.md'
+```
+
+```
+
 ```
