@@ -18,7 +18,7 @@
     },
     "Settings": {
       "index": 3,
-      "w": 651
+      "w": 400
     },
     "Panels": {
       "index": 4,
@@ -51,8 +51,8 @@
   },
   "published": [],
   "extension": true,
-  "widthScale": 100,
-  "heightScale": 92.9399367755532,
+  "widthScale": 44.973544973544975,
+  "heightScale": 80.29504741833509,
   "lineNumbers": true,
   "vimEnabled": false,
   "autoClosePairs": false,
@@ -80,6 +80,6 @@
   "secrets": [],
   "git": {
     "enabled": false,
-    "remoteUrl": "git@github.com:Dienert/fortune500_grove.git"
+    "remoteUrl": ""
   }
 }
