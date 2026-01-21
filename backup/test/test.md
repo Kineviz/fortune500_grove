@@ -1,6 +1,10 @@
-<!--{"pinCode":false,"dname":"6e72b83e-778c-4655-bcfc-4b9a6bb1b217","codeMode":"js"}-->
+<!--{"type":"header","level":2}-->
+## Test
+
+<!--{"type":"header","level":1}-->
 # Partition, Sunburst
 
+<!--{"type":"paragraph"}-->
 This radial space-filling visualization created by [John Stasko](https://www.cc.gatech.edu/gvu/ii/sunburst/) shows the cumulative values of subtrees. It is commonly used to visualize software packages (the size of source code within nested packages) and file systems (the size of files within nested folders). See also the [zoomable version](/@d3/zoomable-sunburst) and the [icicle diagram](/@d3/icicle?collection=@d3/charts).
 
 <!--{"pinCode":false,"dname":"b4eafa35-e65e-4923-b84f-e4087109e04a","codeMode":"js"}-->
@@ -133,5 +137,5 @@ Sunburst = (function Sunburst(data, { // data is either tabular (array of object
 
 <!--{"pinCode":false,"dname":"149d5412-7de2-45ee-82c6-ae61f2900e52","codeMode":"js"}-->
 ```js
-import { howto }  from './exampleComponents'
+import { howto }  from './exampleComponents.md'
 ```
