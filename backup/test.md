@@ -1,1 +1,23 @@
-{"blocks":[{"type":"codeTool","data":{"codeData":{"value":"md`<div style=\"color: grey; font: 13px/25.5px var(--sans-serif); text-transform: uppercase;\"><h1 style=\"display: none;\">Plot: Histogram</h1><a href=\"/plot\">Observable Plot</a> › <a href=\"/@observablehq/plot-gallery\">Gallery</a></div>\n\n# Histogram\n\nUsing the [bin transform](/plot/transforms/bin) and [rect mark](/plot/marks/rect).`","pinCode":false,"dname":"3e64983a-86c1-46aa-83dd-d0a88b0f227a","codeMode":"javascript2"}}},{"type":"codeTool","data":{"codeData":{"value":"data = (FileAttachment(\"penguins.csv\").csv({typed: true}))","pinCode":false,"dname":"c1e6f863-c7f7-4571-aceb-765b192cc9d0","codeMode":"javascript2"}}},{"type":"codeTool","data":{"codeData":{"value":"Plot.plot({\n  y: {grid: true},\n  color: {legend: true},\n  marks: [\n    Plot.rectY(data, Plot.binX({y: \"count\"}, {x: \"flipper_length_mm\", fill: \"sex\"})),\n    Plot.ruleY([0])\n  ]\n})","pinCode":false,"dname":"eee26a64-81ce-493e-aac7-f3ee54e6f9ad","codeMode":"javascript2"}}}],"version":"2.19.1"}
+<!--{"pinCode":false,"dname":"3e64983a-86c1-46aa-83dd-d0a88b0f227a","codeMode":"js"}-->
+<div style="color: grey; font: 13px/25.5px var(--sans-serif); text-transform: uppercase;"><h1 style="display: none;">Plot: Histogram</h1><a href="/plot">Observable Plot</a> › <a href="/@observablehq/plot-gallery">Gallery</a></div>
+
+# Histogram 
+
+Using the [bin transform](/plot/transforms/bin) and [rect mark](/plot/marks/rect).
+
+<!--{"pinCode":false,"dname":"c1e6f863-c7f7-4571-aceb-765b192cc9d0","codeMode":"js"}-->
+```js
+data = (FileAttachment("penguins.csv").csv({typed: true}))
+```
+
+<!--{"pinCode":false,"dname":"eee26a64-81ce-493e-aac7-f3ee54e6f9ad","codeMode":"js"}-->
+```js
+Plot.plot({
+  y: {grid: true},
+  color: {legend: true},
+  marks: [
+    Plot.rectY(data, Plot.binX({y: "count"}, {x: "flipper_length_mm", fill: "sex"})),
+    Plot.ruleY([0])
+  ]
+})
+```
