@@ -1,6 +1,3 @@
-<!--{"type":"header","level":2}-->
-## Test 3
-
 <!--{"type":"header","level":1}-->
 # Partition, Sunburst
 
