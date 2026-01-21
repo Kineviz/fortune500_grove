@@ -18,7 +18,7 @@
     },
     "Settings": {
       "index": 3,
-      "w": 400
+      "w": 756
     },
     "Panels": {
       "index": 4,
@@ -51,8 +51,8 @@
   },
   "published": [],
   "extension": true,
-  "widthScale": 37.36772486772487,
-  "heightScale": 76.71232876712328,
+  "widthScale": 65.01322751322752,
+  "heightScale": 80.29504741833509,
   "lineNumbers": false,
   "vimEnabled": false,
   "autoClosePairs": false,
