@@ -80,6 +80,6 @@
   "secrets": [],
   "git": {
     "enabled": false,
-    "remoteUrl": ""
+    "remoteUrl": "git@github.com:Dienert/fortune500_grove.git"
   }
 }
