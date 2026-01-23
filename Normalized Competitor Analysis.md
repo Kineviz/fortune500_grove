@@ -2,7 +2,7 @@
 
 dienert test eh uma caba muito doidão, meu! claro! que sim! então? test, nice, this is an example
 
-this is another example to test when is this working. test of fire which is not working
+this is another example to test when is this working. test of fire which is working, indeed!
 
 <!--{"pinCode":false,"dname":"edc52032-d57d-495e-8e55-1ad6f83aed11","codeMode":"js","hide":true}-->
 ```js
