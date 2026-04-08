@@ -1,8 +1,7 @@
+<!--{"pinCode":false,"dname":"2776643e-50df-4227-8432-9a2a78f05fe0","codeMode":"markdown"}-->
+```md
 ### Competitor Cohort Analysis
-
-dienert test eh uma caba muito doidão, meu! claro! que sim! então? test, nice, this is an example
-
-this is another example to test when is this working. test of fire which is working, indeed!
+```
 
 <!--{"pinCode":false,"dname":"edc52032-d57d-495e-8e55-1ad6f83aed11","codeMode":"js","hide":true}-->
 ```js
@@ -46,7 +45,7 @@ selectedNormalizedCompetitors = selectedNodes.filter(n=>n.category=='NormalizedC
 
 <!--{"pinCode":false,"dname":"1d947761-62dd-4aa9-a627-1ccae25338fc","codeMode":"js","hide":true}-->
 ```js
-normalized_to_edges = gxr.edges({relationship:'AS'}).toArray()
+normalized_to_edges = gxr.edges({relationship:'INSTANCE_OF'}).toArray()
 ```
 
 <!--{"pinCode":false,"dname":"96fc2d80-8336-474e-9eb6-7a865533c646","codeMode":"js","hide":true}-->

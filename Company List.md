@@ -3,13 +3,26 @@
 mutable refreh_flag = 0
 ```
 
+<!--{"pinCode":true,"dname":"798ffdac-18ad-43d1-a6d7-701257ec2f17","codeMode":"js","hide":true}-->
+```js
+db = {
+  const gvx = window.top?.globalVariable ?? window.parent?.globalVariable;
+  return gvx?.project?.databaseType ?? "unknown";
+}
+```
+
 <!--{"pinCode":false,"dname":"f11a70f7-ef8a-48e8-ba81-091e3ff8acc4","codeMode":"js","hide":true}-->
 ```js
 company_data = {
   let a = refreh_flag
-  let data = await BQGQueryToTable(`MATCH (c:Company)
-return distinct(c.id) as ticker, c.label as name, c.sic as sic`)
-  return data
+  const bq = String(db || "").toLowerCase() === "bigquerygraph";
+  const companyListCypher = bq
+    ? `MATCH (c:Company)
+return distinct(c.id) as ticker, c.label as name, c.sic as sic`
+    : `MATCH (c:Company)
+RETURN DISTINCT c.id AS ticker, c.label AS name, c.sic AS sic`;
+  let data = await BQGQueryToTable(companyListCypher);
+  return data;
 }
 ```
 
@@ -549,7 +562,10 @@ theme = selectedTheme === 'dark' ? theme_dark : theme_light
     }
     gxr.toast().info(`Analyzing ${analysis_type}...`);
     const company_list = "['"+ selection.join("','") +"']";
-    const query = `MATCH (c:Company)-[r]->(m:${analysis_type}) WHERE c.id in UNNEST(${company_list}) RETURN *`;
+    const bq = String(db || "").toLowerCase() === "bigquerygraph";
+    const query = bq
+      ? `MATCH (c:Company)-[r]->(m:${analysis_type}) WHERE c.id IN UNNEST(${company_list}) RETURN *`
+      : `MATCH (c:Company)-[r]->(m:${analysis_type}) WHERE c.id IN ${company_list} RETURN *`;
     try {
       await gxr.query(query);
       propagateCompanyName();
@@ -561,7 +577,7 @@ theme = selectedTheme === 'dark' ? theme_dark : theme_light
 }
 ```
 
-<!--{"pinCode":false,"dname":"e58f5f68-5e0e-4728-aa98-5c8735dd1fe7","codeMode":"js"}-->
+<!--{"pinCode":false,"dname":"e58f5f68-5e0e-4728-aa98-5c8735dd1fe7","codeMode":"js", "hide": true}-->
 ```js
 {
   const c = theme.colors;

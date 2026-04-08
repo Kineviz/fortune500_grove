@@ -755,9 +755,5 @@ function debounce(input, delay = 1000) {
 
 <!--{"pinCode":false,"dname":"6055d289-774e-4b43-a367-6c4bbedbd9c2","codeMode":"js","hide":true}-->
 ```js
-import {simplifyMarket} from 'backup/map_market.md'
-```
-
-```
-
+import {simplifyMarket} from 'map_market'
 ```
