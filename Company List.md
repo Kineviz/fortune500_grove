@@ -21,8 +21,13 @@ company_data = {
 return distinct(c.id) as ticker, c.label as name, c.sic as sic`
     : `MATCH (c:Company)
 RETURN DISTINCT c.id AS ticker, c.label AS name, c.sic AS sic`;
-  let data = await BQGQueryToTable(companyListCypher);
-  return data;
+  try {
+    let data = await BQGQueryToTable(companyListCypher);
+    return data || [];
+  } catch (e) {
+    console.error("Error loading company data:", e);
+    return [];
+  }
 }
 ```
 
@@ -321,7 +326,7 @@ theme = selectedTheme === 'dark' ? theme_dark : theme_light
   // Internal function to filter and sort (selected first)
   const getFilteredData = () => {
     const filter = currentFilter.toLowerCase();
-    let data = company_data;
+    let data = company_data || [];
     if (filter) {
       data = data.filter(row => 
         (row.ticker && row.ticker.toLowerCase().includes(filter)) ||
